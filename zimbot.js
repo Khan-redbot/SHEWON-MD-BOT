@@ -387,29 +387,29 @@ randek = jsonDrips[randIndex];
                 if (!('antilink' in chats)) chats.antilink = false
                 if (!('antilinkyt' in chats)) chats.antilinkyt = false
                 if (!('autoblock' in chats)) chats.autoblock = false
-                if (!('isWecome' in chats)) chats.isWelcome = true
+                if (!('isWecome' in chats)) chats.isWelcome =false
                 if (!('antilinkall' in chats)) chats.antilinkall = false
-                if (!('antiytchannel' in chats)) chats.antiytchannel = false
-                if (!('antitiktok' in chats)) chats.antitiktok = false
+                if (!('antiytchannel' in chats)) chats.antiytchannel =true
+                if (!('antitiktok' in chats)) chats.antitiktok = true
                 if (!('antitelegram' in chats)) chats.antitelegram = false
                 if (!('antiinstagram' in chats)) chats.antiinstagram = false
-                if (!('antifb' in chats)) chats.antifb = false
+                if (!('antifb' in chats)) chats.antifb = true
                 if (!('antibule' in chats)) chats.antibule = false
                 if (!('antiwame' in chats)) chats.antiwame = false
                 if (!('wame' in chats)) chats.wame = false
                 if (!('antitwitter' in chats)) chats.antitwitter = false
             } else global.db.data.chats[m.chat] = {
-                mute: false,
-                wame: false,
+                mute: true,
+                wame: trur,
                 antilink: false,
                 antilinkyt: false,
-                isWelcome: true,
+                isWelcome: false,
                 antilinkall: false,
-                antiytchannel: false,
-                antitiktok: false,
+                antiytchannel:true,
+                antitiktok: trur,
                 antitelegram: false,
                 antiinstagram: false,
-                antifb: false,
+                antifb: true,
                 antibule: false,
                 antiwame: false,
                 antitwitter: false,
